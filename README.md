@@ -138,6 +138,17 @@ This is where Basic lines of codes or queries are included during my analysis
 
 ### Data Visualization
 ---
+<img width="419" alt="subscription table1" src="https://github.com/user-attachments/assets/44327231-e159-497f-920b-5fc792d8f629">
+
+<img width="467" alt="subscription table 2" src="https://github.com/user-attachments/assets/7bb65d00-46c8-40b3-8018-e39b6978975f">
+
+<img width="465" alt="subscription table 3" src="https://github.com/user-attachments/assets/145323c5-c629-45a4-bd68-ed0c53a1231a">
+
+<img width="425" alt="subscription pattern" src="https://github.com/user-attachments/assets/ef80bc75-1b77-47c1-b422-39dc31918c3c">
+
+<img width="441" alt="Subscription by month" src="https://github.com/user-attachments/assets/232eca00-b9b0-4a93-a4f9-bde93e66658a">
+
+
 
 ### Project Status:
 In Progress
