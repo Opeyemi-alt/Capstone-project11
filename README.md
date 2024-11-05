@@ -133,8 +133,8 @@ To design and develop a comprehensive customer segmentation and subscription ana
 ---
 This is where Basic lines of codes or queries are included during my analysis
 ```Excel
-
-
+Subscription duration
+=AVERAGE(E2,F2)
 ```
 ```SQL
 total customer by region:
