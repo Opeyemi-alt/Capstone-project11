@@ -134,6 +134,52 @@ To design and develop a comprehensive customer segmentation and subscription ana
 This is where Basic lines of codes or queries are included during my analysis
 ```Excel
 
+
+```
+```SQL
+total customer by region:
+SELECT Region, COUNT(CustomerID) AS TotalCustomers
+FROM customer_data
+GROUP BY Region;
+
+Most Popular Subscription Type:
+SELECT SubscriptionType, COUNT(CustomerID) AS TotalCustomers
+FROM customer_data
+GROUP BY SubscriptionType
+ORDER BY TotalCustomers DESC
+LIMIT 1;
+
+Customers Who Cancelled Within 6 Months:
+SELECT CustomerID, CustomerName
+FROM customer_data
+WHERE DATEDIFF(SubscriptionEnd, SubscriptionStart) <= 180 AND Canceled = True;
+
+Average Subscription Duration:
+SELECT AVG(DATEDIFF(SubscriptionEnd, SubscriptionStart)) AS AverageDuration
+FROM customer_data;
+
+Customers with Subscriptions Longer than 12 Months:
+SELECT CustomerID, CustomerName
+FROM customer_data
+WHERE DATEDIFF(SubscriptionEnd, SubscriptionStart) > 365;
+
+Total Revenue by Subscription Type:
+SELECT SubscriptionType, SUM(Revenue) AS TotalRevenue
+FROM customer_data
+GROUP BY SubscriptionType;
+
+Top 3 Regions by Cancellations:
+SELECT Region, COUNT(CustomerID) AS Cancellations
+FROM customer_data
+WHERE Canceled = True
+GROUP BY Region
+ORDER BY Cancellations DESC
+LIMIT 3;
+
+Total Active and Cancelled Subscriptions:
+SELECT Canceled, COUNT(CustomerID) AS TotalSubscriptions
+FROM customer_data
+GROUP BY Canceled;
 ````
 
 ### Data Visualization
